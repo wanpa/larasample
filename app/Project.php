@@ -12,5 +12,5 @@ class Project extends Model
         'customer_name',
         'construction_name',
         'status'
-    ]
+    ];
 }
