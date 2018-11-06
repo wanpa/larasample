@@ -11,32 +11,6 @@
                 <div id="app">
                     <projects-component></projects-component>
                 </div>
-                <div class="table-responsive d-table">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>案件番号</th>
-                                <th>受付日</th>
-                                <th>顧客名</th>
-                                <th>工事名</th>
-                                <th>ステータス</th>
-                                <th>更新日</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($projects as $project)
-                                <tr>
-                                <td>{{ $project->id }}</td>
-                                <td>{{ $project->receipt_date }}</td>
-                                <td>{{ $project->customer_name }}</td>
-                                <td>{{ $project->construction_name }}</td>
-                                <td>{{ $project->updated_at }}</td>
-                                <td><span class="badge badge-danger" style="height: 18px;">{{ $project->status }}<span></td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
             </div>
         </div>
     </section>

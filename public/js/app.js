@@ -43373,10 +43373,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-        console.log('Component mounted.');
+        console.log('ProjectComponent mounted.');
     }
 });
 
@@ -43388,9 +43399,34 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [_vm._v("\n    hogehoge\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "table-responsive d-table" }, [
+      _c("table", { staticClass: "table table-striped" }, [
+        _c("thead", [
+          _c("tr", [
+            _c("th", [_vm._v("案件番号")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("受付日")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("顧客名")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("工事名")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("ステータス")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("更新日")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
