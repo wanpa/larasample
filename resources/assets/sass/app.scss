@@ -1,9 +1,59 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 // Variables
 @import "variables";
 
+//  Additional Fonts
+// @import "node_modules/font-awesome/scss/font-awesome.scss";
+
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: helvetica;
+    background: rgb(235, 238, 243);
+    color: #616161;
+}
+
+a {
+    text-decoration: none;
+    color: #616161;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.menu {
+    background: #fff;
+    font-size: 1.4em;
+    padding: 15px 25px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__brand a {
+        color: #E91E63;
+        font-weight: bold;
+    }
+}
+
+.home {
+    overflow: hidden;
+    background-color: #ebeef3;
+    // padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+}
+
